@@ -73,19 +73,15 @@
     border-bottom: 2px solid #999;
     margin-top: 40px;
     padding-bottom: 5px;
+    a,h4{
+        color: #999;
+        font-size: 14px;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
 }
 
-.head h4,
-.head a,{
-    color: #999;
-    font-size: 14px;
-    font-weight: 900;
-    text-transform: uppercase;
-}
 
-.ads {
-    text-align: center;
-}
 
 @media (max-width:560px){
     

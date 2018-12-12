@@ -1,3 +1,90 @@
-<p>
-  detail works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-2 d-lg-block d-none">
+      <app-categories></app-categories>
+    </div>
+    <div class="col-lg-8 col-sm-10 product-list mt-4">
+      <div class="row">
+        <div class="col">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Grocery & Staples > </a></li>
+              <li class="breadcrumb-item active" aria-current="page">Category ></li>
+              <li class="breadcrumb-item active" aria-current="page">Atta</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="head mb-4">
+            <h4>New Arrivals</h4>
+            <a href="/listing" class="show-all">Show All</a>
+          </div>
+        </div>
+      </div>
+      <div class="product product-detail-wrap mb-4">
+        <div class="row">
+
+          <div class="col-sm-6">
+            <div class="prod-img-nav-wrap">
+              <img class="product-img" src="./assets/product-big-1.jpg" alt="Card image cap">
+            </div>
+          </div>
+          <div class="col-sm-6 detail-border">
+            <div class="product-detail">
+              <div class="icons-detail">
+                <ul>
+                  <li><i class="fas fa-heart"></i></li>
+                  <li><i class="fas fa-star"></i></li>
+                  <li><i class="fas fa-comment"></i></li>
+                </ul>
+              </div>
+              <div class="p-detail">
+                <span>ITC</span>
+                <h3>Aashirwaad Atta</h3>
+                <p>uilt on top of the popular AngularJS framework
+                  from Google, Ionic utilizes AngularJS to provide the
+                  application structure, while Ionic itself focuses on
+                  the user interface. In other words. uilt on top of the
+                  from Google, Ionic utilizes AngularJS to provide the
+                  application structure, while Ionic itself focuses on
+                  the user interface. In other words</p>
+              </div>
+            </div>
+            <div class="pricing-quantity-wrap">
+              <div class="info">
+                <span>Rs. 136/-</span>
+                <span class="weigth">10 KG Pouch</span>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <select class="select-size-price col mt-3">
+                    <option selected>Size - Price</option>
+                    <option value="1">1kg - Rs. 30</option>
+                    <option value="2">1kg - Rs. 30</option>
+                    <option value="3">1kg - Rs. 30</option>
+                  </select>
+                </div>
+                <div class="col-sm-6">
+                  <div class="input-group mt-3 quantity-wrap">
+                    <span>Quantity</span> <input type="number" class="form-control" name="quantity" min="1" max="5">
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-primary col mt-3 btn-cart-add"> Add to Bag</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabs-wrap">
+          <ngbd-tabset-basic></ngbd-tabset-basic>
+
+      </div>
+    </div>
+    <div class="col-lg-2 col-sm-2  mt-4">
+      <app-ads></app-ads>
+    </div>
+  </div>
+</div>

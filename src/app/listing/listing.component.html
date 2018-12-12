@@ -1,9 +1,9 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-2">
+    <div class="col-lg-2 d-lg-block d-none">
       <app-categories></app-categories>
     </div>
-    <div class="col-md-8 product-list">
+    <div class="col-lg-8 col-sm-10 product-list mt-4">
       <div class="row">
         <div class="col">
           <nav aria-label="breadcrumb">
@@ -14,21 +14,62 @@
           </nav>
         </div>
       </div>
-        <div class="product">
+      <div class="row">
+          <div class="col">
+            <div class="head mb-4">
+                <h4>New Arrivals</h4>
+                <a href="/listing" class="show-all">Show All</a>
+            </div>
+        </div>
+      </div>
+        <div class="product mb-4" *ngFor="let dummy of ' '.repeat(2).split(''), let x = index">
           <div class="row">
 
+            <div class="col-sm-4">
+                <div class="prod-img-nav-wrap">
+                    <img class="product-img" src="./assets/product-1.jpg" alt="Card image cap">
+                    <div class="">
+                      <ul>
+                        <li><i class="fas fa-heart"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-comment"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-5 detail-border">
+              <div class="product-detail">
+                <span>ITC</span>
+                <h3><a href="/detail">Aashirwaad Atta</a></h3>
+                <p>uilt on top of the popular AngularJS framework
+                  from Google, Ionic utilizes AngularJS to provide the
+                  application structure, while Ionic itself focuses on
+                  the user interface. In other words. uilt on top of the
+                  from Google, Ionic utilizes AngularJS to provide the
+                  application structure, while Ionic itself focuses on
+                  the user interface. In other words</p>
+              </div>
+            </div>
             <div class="col-sm-3">
-              <img src="./assets/product-1.jpg" alt="" class="product-img img-fluid">
+                <div class="info">
+                  <span>Rs. 136/-</span>
+                  <span class="weigth">10 KG Pouch</span>
+                </div>
+                <select class="select-size-price col mt-3">
+                  <option selected>Size - Price</option>
+                  <option value="1">1kg - Rs. 30</option>
+                  <option value="2">1kg - Rs. 30</option>
+                  <option value="3">1kg - Rs. 30</option>
+                </select>
+                <div class="input-group mt-3 quantity-wrap">
+                    <span>Quantity</span> <input type="number" class="form-control" name="quantity" min="1" max="5">
+                </div>
+                <button class="btn btn-primary col mt-3 btn-cart-add"> Add to Bag</button>
             </div>
-            <div class="col-sm-6">
-              <h5 class="mt-0">Top-aligned media</h5>
-            </div>
-            <div class="col-sm-3">price</div>
           </div>
         </div>
     </div>
-    <div class="col-lg-2 col-sm-2 ads">
-
+    <div class="col-lg-2 col-sm-2  mt-4">
       <app-ads></app-ads>
     </div>
   </div>
