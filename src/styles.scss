@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+}
+
+ul,li{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.right-aligh{
+	text-align: right;
+}
+.breadcrumb{
+    background-color: #fff;
+}
+.breadcrumb .breadcrumb-item.active,
+.breadcrumb .breadcrumb-item a {
+    color: #64b242;
+    font-size: 12px;
+    font-weight: 700;
+}
+.product-img {
+    border: 1px solid #ccc;
+}

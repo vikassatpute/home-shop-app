@@ -1,45 +1,49 @@
-<div class="container mt-4">
+<div class="container">
   <div class="row">
 
-    <div class="col-lg-2 col-md-2"></div>
-    <div class="col-lg-8 col-md-8">
+    <div class="col-lg-2 d-none d-lg-block">
+        <app-categories></app-categories>
+    </div>
+    <div class="col-lg-8 col-sm-10 mt-4">
       <div class="banner">
         <img src="./assets/banner.jpg" alt="" class="mb-2 img-fluid">
       </div>
       <div class="new-arrivals">
-        <div class="col-lg-12">
+        <div class="head">
+          <h4>New Arrivals</h4>
+          <a href="/listing" class="show-all">Show All</a>
+        </div>
+        <div class="mt-4">
           <div class="row">
-            <div class="card-columns">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-3" *ngFor="let dummy of ' '.repeat(4).split(''), let x = index">
               <div class="card" >
-                <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card" >
-                <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card" >
-                <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card" >
-                <img class="card-img-top" src=".../100px180/" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card-body p-2">
+                  <div class="prod-img-nav-wrap">
+                    <img class="product-img" src="./assets/product-1.jpg" alt="Card image cap">
+                    <div class="">
+                      <ul>
+                        <li><i class="fas fa-heart"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-comment"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a href="/listing" class="brand-name">ITC</a>
+                  <h5 class="card-title">Aashirwaad Atta</h5>
+                  <div class="info">
+                    <span>Rs. 136/-</span>
+                    <span class="weigth">10 KG Pouch</span>
+                  </div>
+                  <select class="select-size-price col mt-3">
+                      <option selected>Size - Price</option>
+                      <option value="1">Mumbai</option>
+                      <option value="2">Banglore</option>
+                      <option value="3">Delhi</option>
+                    </select>
+                    <div class="input-group mt-3 quantity-wrap">
+                        <span>Quantity</span> <input type="number" class="form-control" name="quantity" min="1" max="5">
+                      </div>
+                      <button class="btn btn-primary col mt-3 btn-cart-add"> Add to Bag</button>
                 </div>
               </div>
             </div>
@@ -47,11 +51,8 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-2 col-md-2">
-      <img src="./assets/ads/ad-1.jpg" alt="" class="mb-2 img-fluid">
-      <img src="./assets/ads/ad-2.jpg" alt="" class="mb-2 img-fluid">
-      <img src="./assets/ads/ad-3.jpg" alt="" class="mb-2 img-fluid">
-      <img src="./assets/ads/ad-4.jpg" alt="" class="mb-2 img-fluid">
+    <div class="col-lg-2 col-sm-2 mt-4 ads">
+      <app-ads></app-ads>
     </div>
   </div>
 </div>

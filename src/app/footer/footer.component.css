@@ -1,0 +1,155 @@
+
+.app-load{
+	background: #64b242;
+	padding: 20px 0;
+}
+.app-load a{
+	margin: 0 0 10px 10px;
+	display: inline-block;
+}
+.app-load p{
+	font-size: 24px;
+	color: #fff;
+	font-weight: 300;
+	padding-top: 10px;
+}
+.online-support{
+	background: #f7d900;
+	padding: 30px 0;
+}
+.online-support .container{
+	position: relative;
+}
+.online-support .container::before{
+	position: absolute;
+	content: '';
+	width: 52px;
+	height: 52px;
+	left: 0px;
+	top:-10px;
+	background: url('../../assets/callcenter.png') no-repeat;
+}
+.online-support ul{
+	padding: 0 0 0 60px;
+	text-align: center;
+	width: 100%;
+}
+.online-support ul li{
+	display: inline-block;
+	font-size: 24px;
+	color: #333;
+	font-weight: 300;
+	padding: 0 30px;
+	border-right: 1px solid #333;
+	word-break: break-word;
+}
+.online-support ul li:last-child{
+	border: none;
+}
+.footer-links{
+	background: #666;
+	padding: 15px 0;
+}
+.col-sm-20{
+	width: 20%;
+	display: inline-block;
+	float: left;
+}
+.footer-links ul li{
+	font-size: 12px;
+	display: block;
+	color: #00cc33;
+	padding: 3px 0;
+	margin: 0 0 3px ;
+	position: relative;
+}
+.footer-links ul li:first-child:after{
+	position: absolute;
+	content: '';
+	left: 0px;
+	bottom: 0px;
+	height: 1px;
+	width: 50px;
+	background: #00cc33;
+}
+.footer-links ul li a{
+	display: block;
+	color: #ccc;
+	text-decoration: none;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+.newletter ul li:last-child a{
+	text-transform: capitalize;
+	pointer-events: none;
+}
+.newletter input.form-control{
+	background: #595959;
+	color: #999;
+	border:none;
+	width: calc(100% - 46px);
+	float: left;
+}
+.newletter button{
+	float: right;
+	background: #64b242;
+	border-radius: 4px;
+	color: #fff;
+	width: 35px;
+	height: 36px;
+	border:none;
+	cursor: pointer;
+}
+
+@media(max-width:767px){
+	.top-navigation{
+		padding: 5px 15px;
+	}
+	.cart-wrap{
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 130px;
+	}
+	.cart-wrap a{
+		width: 100%;
+	}
+	.cart-wrap a div:before,.cart-wrap a h6{
+		display: none;
+	}
+	.cart-wrap a div{
+		padding: 0px;
+	}
+	nav .navbar-brand, .select-category{
+		font-size: 18px;
+		margin: 10px 0 0;
+	}
+	.btn-form{
+		position: static;
+	}
+	.select-category select{
+		width: calc(100% - 42px);
+		margin: 8px 0 0 0
+	}
+	.app-load a{
+		margin: 0px;
+	}
+	.app-load a img{
+		width: 120px;
+	}
+	.app-load .right-aligh,.app-load p{
+		text-align: center;
+	}
+	.app-load p{
+		font-size: 20px;
+	}
+	.online-support ul li{
+		border:none;
+		padding: 10px 15px;
+		font-size: 16px;
+		border-bottom: 1px solid #333;
+	}
+	.online-support .container::before{
+		left: 15px;
+    }
+}

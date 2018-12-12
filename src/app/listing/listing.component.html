@@ -1,3 +1,35 @@
-<p>
-  listing works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+      <app-categories></app-categories>
+    </div>
+    <div class="col-md-8 product-list">
+      <div class="row">
+        <div class="col">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+        <div class="product">
+          <div class="row">
+
+            <div class="col-sm-3">
+              <img src="./assets/product-1.jpg" alt="" class="product-img img-fluid">
+            </div>
+            <div class="col-sm-6">
+              <h5 class="mt-0">Top-aligned media</h5>
+            </div>
+            <div class="col-sm-3">price</div>
+          </div>
+        </div>
+    </div>
+    <div class="col-lg-2 col-sm-2 ads">
+
+      <app-ads></app-ads>
+    </div>
+  </div>
+</div>

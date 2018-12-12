@@ -24,7 +24,7 @@
             ],
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.slim.js",
@@ -136,5 +136,10 @@
       }
     }
   },
-  "defaultProject": "home-shop-app"
+  "defaultProject": "home-shop-app",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
