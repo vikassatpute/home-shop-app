@@ -1,25 +1,57 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-      <select class="col-xs">
-          <option selected>Pune</option>
-          <option value="1">Mumbai</option>
-          <option value="2">Banglore</option>
-          <option value="3">Delhi</option>
-        </select>
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Log in</a>
-          </li>
-          <li>|</li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Register</a>
-          </li>
-        </ul>
-  </div>
-</nav>
-<header>
-    <div class="container">
-      <a class="navbar-brand logo" href="#">Home Shop App</a>
-      <div class="search"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 top-navigation">
+      <select>
+        <option>Pune</option>
+        <option>Mumbai</option>
+      </select>
+      <ul>
+        <li><a href="javascript:">Login</a></li>
+        <li><a href="javascript:">Register</a></li>
+      </ul>
     </div>
-</header>
+  </div>
+</div>
+<nav>
+  <div class="container">
+    <div class="row">
+      <diV class="col-sm-3 logo"><a class="navbar-brand" href="/">HomeShopApp</a></diV>
+      <div class="col-sm-7 select-category">
+        <form>
+            <input class="form-control" type="text" placeholder="Search for your favourite product or brand" aria-label="Search">
+            <div class="btn-form">
+              <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
+              <select>
+                <option>All Categories</option>
+              </select>
+            </div>
+          </form>
+      </div>
+      <div class="col-sm-2 cart-wrap">
+        <a href="javascript:" class="">
+          <div>Your Bag<span>99 items</span></div>
+          <h6>start shopping <i class="fas fa-angle-right"></i></h6>
+        </a>
+      </div>
+    </div>  
+  </div>
+</nav> 
+<div class="categories-bar">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">
+        <button class="btn col categories">
+            <i class="fas fa-list"></i>
+            <span>categories</span>
+            <i class="fas fa-angle-down"></i>
+        </button>
+      </div>
+      <div class="col-sm-10">
+        <div class="cat-btn-wrap">
+          <span>Offers</span>
+          <span><img src="./assets/smart-shopping.png" alt=""> Smart Shopping</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

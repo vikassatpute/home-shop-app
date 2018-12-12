@@ -5,9 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 import { ListingComponent } from './listing/listing.component';
 import { DetailComponent } from './detail/detail.component';
-import { HomeComponent } from './home/home.component';
+import { AdsComponent } from './ads/ads.component';
+import { CategoriesComponent } from './categories/categories.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { HomeComponent } from './home/home.component';
     FooterComponent,
     ListingComponent,
     DetailComponent,
-    HomeComponent
+    HomeComponent,
+    AdsComponent,
+    CategoriesComponent
   ],
   imports: [
     BrowserModule,
