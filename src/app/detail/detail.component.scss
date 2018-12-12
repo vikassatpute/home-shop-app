@@ -1,0 +1,94 @@
+.product.product-detail-wrap{
+    background-color: #fff;
+    padding: 15px;
+    .product-img{
+        width: 100%;
+    }
+    .info{
+        text-align: left;
+        span{
+            display: block;
+            font-size: 14px;
+            color: #333;
+            font-weight: 700;
+        }
+        .weigth{
+            color: #999;
+            text-transform: uppercase;
+        }
+    }
+    .pricing-quantity-wrap{
+        padding-top:20px;
+        border-top: 1px solid #ccc;
+    
+        .quantity-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span{
+                font-size: 12px;
+                color: #666;
+                margin-right: 10%;
+            }
+            input{
+                height: 28px;
+                border-radius: 0;
+            }
+        }
+        .select-size-price{
+            font-size: 12px;
+            color: #666;
+            height: 26px;;
+            padding-left: 8px;
+        }
+        .btn-cart-add{
+            font-size: 10px;
+            color: #64b242;
+            font-weight: 700;
+            text-transform: uppercase;
+            background-color: transparent;
+            border-color: #64b242;
+            border-radius: 0;
+            width: 50%;
+        }
+    }
+
+    .detail-border{
+        border-right: 1px solid #ccc;
+    }
+    .product-detail{
+        display: flex;
+        align-content: space-between;
+        span{
+            font-size: 14px;
+            color: #999;
+            font-weight: 700;
+        }
+        h3 a{
+            font-size: 22px;
+            color: #333;
+        }
+        p{
+            font-size: 12px;
+            color: #333;
+        }
+        .icons-detail{
+            ul {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+            }
+            ul li {
+                list-style: none;
+                padding: 10px 0;
+            }
+            ul li i{
+                color: #999;
+                font-size: 30px;
+            }
+        }
+    }
+
+}
